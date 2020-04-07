@@ -8,8 +8,8 @@ import java.util.List;
 public class MachineService {
     Machine machine;
 
-    public MachineService(List<Party> parties) {
-        machine = new Machine(parties);
+    public MachineService() {
+        machine = new Machine();
     }
 
     public void vote(Party party, String voterId) {
@@ -43,5 +43,9 @@ public class MachineService {
             }
         }
         return (highestVoteCountPartyCount == 1) ? winner : null;
+    }
+
+    public void addParty(Party party) {
+        machine.addParty(party);
     }
 }

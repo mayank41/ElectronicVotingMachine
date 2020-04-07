@@ -8,9 +8,9 @@ public class Machine {
     private List<Party> parties = new ArrayList<>();
     private List<String> voterIds = new ArrayList<>();
     private List<String> blackListedVoterIds = new ArrayList<>();
+    
+    public Machine() {
 
-    public Machine(List<Party> parties) {
-        this.parties = parties;
     }
 
     public void addParty(Party party) {
@@ -36,4 +36,5 @@ public class Machine {
     public List<Party> getParties() {
         return parties;
     }
+
 }

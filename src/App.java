@@ -17,11 +17,10 @@ public class App {
         Party aap = new AAP();
         Party congress = new Congress();
 
-        parties.add(bjp);
-        parties.add(aap);
-        parties.add(congress);
-
-        MachineService machineService = new MachineService(parties);
+        MachineService machineService = new MachineService();
+        machineService.addParty(bjp);
+        machineService.addParty(aap);
+        machineService.addParty(congress);
 
         User user1 = new User("1");
         app.castVote(machineService, bjp, user1);
