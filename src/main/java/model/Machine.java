@@ -2,6 +2,7 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
+import model.Party;
 
 public class Machine {
 
@@ -13,7 +14,7 @@ public class Machine {
 
     }
 
-    public void addParty(Party party) {
+    public void addParty(model.Party party) {
         parties.add(party);
     }
 

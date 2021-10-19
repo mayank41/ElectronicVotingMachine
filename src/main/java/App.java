@@ -1,9 +1,10 @@
+
 import model.Party;
 import model.User;
+import service.MachineService;
 import model.impl.AAP;
 import model.impl.BJP;
 import model.impl.Congress;
-import service.MachineService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +14,7 @@ public class App {
     public static void main(String[] args) {
         App app = new App();
         List<Party> parties = new ArrayList<>();
+
         Party bjp = new BJP();
         Party aap = new AAP();
         Party congress = new Congress();
